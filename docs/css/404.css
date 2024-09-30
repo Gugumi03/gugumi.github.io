@@ -1,19 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 0,
+      "INFM" 0,
+      "SPAC" 0;
 }
 
-h1 {
-    color: blueviolet;
-    text-transform: none;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-body {
-    display: grid;
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2 )), url(/img/error.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.logo {
+    color: #ffffdc;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.menu .hdden ul li {
     position: relative;
-    align-items: center center;
-    align-content: center center;
+    float: left;
+    
+}
+.menu .hdden ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffdc;
+    display: block;
+    font-weight: 600;
+    
+}
+.menu .hdden ul li a:hover {
+    background-color: #28282b;
+}
+#menu {
+    display: none;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .navbar {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+.menu-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    text-align: right;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 15px 0px;
+    color: white;
+   
+}
+.menu-horizontal ul li a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-horizontal li:hover {
+    background: rgba(14, 14, 14, 0.281);
+    border-radius: 10px;
+}
+
+.vertical {
+    position: absolute;
+    display: none;
+    width: 100px;
+    background-color: rgba(14, 14, 14, 0.281);
+    border-radius: 10px;
+}
+
+.menu-horizontal li:hover .vertical {
+    display: block;
+}
+
+.vertical li:hover {
+    background: #bfbfbf;
+    border-radius: 10px;
+}
+
+.vertical li a {
+    display: block;
+    color: #fff;
+    padding: 15px 100px 15px 7px;
+    text-decoration: none;
+}
+
+.header-content {
+    text-align: center;
+}
+.header-content h1 {
+    font-size: 200px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    font-weight: 800;
+}
+.header-content p {
+    font-size: 16px;
+    color: #000000;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    
+}
+.header-content .btn-regreso {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-bottom: 25px;
+    background-color: #000;
+    border-radius: 2rem;
+    font-weight: 500;
+    
+}
+
+/*Aquí acaba el header*/
+
+.yopi {
+    padding: 80px 0;
+    background-color: #e1e2e6;
+    position: relative;
+    height: 250vh;
+
+}
+.yopi-content {
+    text-align: center;
+    margin-bottom: 200px;
+}
+.yopi-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.yopi-group {
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    padding: 20px;
+}
+
+.yopi-cont {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8px;
+}
+.yopi-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.yopi-gallery img {
+    width: 100%;
+    border-radius: 10%;
+}
+.yopi-1 h3 {
+    columns: #323337;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.yopi .yopi-img {
+    height: 200px;
+    padding: 0 42%;
+    
+}
+/*aquí termina sección yopi*/
+
+
+.footer {
+    padding: 10px 0;
+    background-color: #000;
+
+}
+
+.link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 25%;
+  
+}
+.footer h3 {
+    font-size: 20px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+   padding: 0 48%;
+}
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+/*aquí termina footer*/
+@media (min-width: 992px){
+    .menu .hdden {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        display: none;
+    }
+    .menu .hdden {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .hdden ul li {
+        width: 100%;
+    }
+    #menu:checked ~.hdden {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+    .header-content p {
+        padding: 0;
+    }
+    .yopi {
+        padding: 30px;
+    }
+    .yopi-content h2 {
+        padding: 0;
+    }
+    .txt-p {
+         padding: 0;
+    }
+    .yopi-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .yopi-img {
+        display: none;
+    }
+    .porfolio {
+        padding: 30px;
+    
+    } 
+    .porfolio-content p {
+        padding: 0;
+    }
+    .porfolio-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .porfolio-1 {
+        margin-bottom: 25px;
+    }
+    .general {
+        flex-direction: column;
+    }
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .general-2, .general-3 {
+        display: none;
+    }
+    .blog {
+        padding: 30px;
+    }
+    .blog-content {
+        flex-direction: column;
+    }
+    .blog-1 {
+        padding: 0;
+    }
+    .footer {
+        padding: 30px;
+        
+    }
+    .footer  h3{
+        padding: 0 44%;
+        
+    }
+    .link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
 }
