@@ -37,6 +37,7 @@ CUALQUIER COSA CHECA LAS NOTAS DEL STYLE
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
     
 }
 .logo {
@@ -45,88 +46,6 @@ CUALQUIER COSA CHECA LAS NOTAS DEL STYLE
     font-weight: 700;
     cursor: pointer;
 }
-.menu .hdden ul li {
-    position: relative;
-    float: left;
-    
-}
-.menu .hdden ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #ffffdc;
-    display: block;
-    font-weight: 600;
-    
-}
-.menu .hdden ul li a:hover {
-    background-color: #28282b;
-}
-#menu {
-    display: none;
-}
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-.menu .navbar {
-    display: flex;
-    font-size: 25px;
-    font-weight: 700;
-    cursor: pointer;
-    
-}
-
-.menu-horizontal {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-    text-align: right;
-}
-
-.menu-horizontal li a {
-    display: block;
-    padding: 15px 0px;
-    color: white;
-   
-}
-.menu-horizontal ul li a {
-    display: block;
-    padding: 15px 10px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.menu-horizontal li:hover {
-    background: rgba(14, 14, 14, 0.281);
-    border-radius: 10px;
-}
-
-.vertical {
-    position: absolute;
-    display: none;
-    width: 100px;
-    background-color: rgba(14, 14, 14, 0.281);
-    border-radius: 10px;
-}
-
-.menu-horizontal li:hover .vertical {
-    display: block;
-}
-
-.vertical li:hover {
-    background: #bfbfbf;
-    border-radius: 10px;
-}
-
-.vertical li a {
-    display: block;
-    color: #fff;
-    padding: 15px 100px 15px 7px;
-    text-decoration: none;
-}
-
 .header-content {
     text-align: center;
 }
