@@ -21,7 +21,7 @@ CUALQUIER COSA CHECA LAS NOTAS DEL STYLE
 }
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url(img/yemita_811.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
